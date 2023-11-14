@@ -70,8 +70,17 @@ npm run build
 - **README.md:** Documentación del proyecto que proporciona instrucciones y detalles sobre el proyecto.
 
 
+## Si has clonado el proyecto, después de navegar al directorio del proyecto, debes ejecutar los siguientes comandos para instalar las dependencias:
+```bash
+cd kululuhandicrafts-frontend
+```
+```bash
+npm install
+```
+## Esto instalará todas las dependencias del proyecto que están definidas en el archivo package.json. Después de eso, puedes ejecutar el comando npm start para iniciar la aplicación.
 
-
-
+```bash
+npm start
+```
 
 
