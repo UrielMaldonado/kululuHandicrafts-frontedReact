@@ -30,27 +30,32 @@ function Joyeria() {
   }, []);
 
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', marginTop: 70 }}>
-      {joyeriaData.map((joyeria) => (
-        <Card key={joyeria.id} sx={{ maxWidth: 300, width: '100%', margin: 2 }}>
-          <CardActionArea>
-            <CardMedia component="img" height="240" image={joyeria.imagen} alt={joyeria.nombre} />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {joyeria.nombre}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {joyeria.descripcion}
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions>
-            <Button size="small" color="primary">
-              Compartir
-            </Button>
-          </CardActions>
-        </Card>
-      ))}
+    <div style={{ marginTop: 90 }}>
+      <Typography variant='h4' gutterBottom style={{ textAlign: 'center', fontWeight: 'bold', fontStyle: 'italic' }}>
+        Joyeria Artesanal
+      </Typography>
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', marginTop: 20 }}>
+        {joyeriaData.map((joyeria) => (
+          <Card key={joyeria.id} sx={{ maxWidth: 300, width: '100%', margin: 2 }}>
+            <CardActionArea>
+              <CardMedia component="img" height="240" image={joyeria.imagen} alt={joyeria.nombre} />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  {joyeria.nombre}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {joyeria.descripcion}
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button size="small" color="primary">
+                Compartir
+              </Button>
+            </CardActions>
+          </Card>
+        ))}
+      </div>
     </div>
   );
 }

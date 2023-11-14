@@ -59,8 +59,8 @@ function Home() {
     return (
         <>
             <div style={{ marginTop: 90 }}>
-            <Typography variant="h3" gutterBottom style={{ textAlign: 'center' }}>
-                    Ropa
+                <Typography variant='h4' gutterBottom style={{ textAlign: 'center', fontWeight: 'bold', fontStyle: 'italic' }}>
+                    Ropa Artesanal
                 </Typography>
                 <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
                     {ropaData.slice(0, visibleCards).map((ropa) => (
@@ -87,9 +87,10 @@ function Home() {
             </div>
 
             <div style={{ marginTop: 20 }}>
-            <Typography variant="h3" gutterBottom style={{ textAlign: 'center' }}>
-                    Joyería
+                <Typography variant='h4' gutterBottom style={{ textAlign: 'center', fontWeight: 'bold', fontStyle: 'italic' }}>
+                    Accesorios Artesanales
                 </Typography>
+
                 <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
                     {joyeriaData.slice(0, visibleCards).map((joyeria) => (
                         <Card key={joyeria.id} sx={{ maxWidth: 300, width: '100%', margin: 2 }}>
@@ -115,9 +116,10 @@ function Home() {
             </div>
 
             <div style={{ marginTop: 20 }}>
-            <Typography variant="h3" gutterBottom style={{ textAlign: 'center' }}>
-                    Accesorios
+                <Typography variant='h4' gutterBottom style={{ textAlign: 'center', fontWeight: 'bold', fontStyle: 'italic' }}>
+                    Joyeria Artesanal
                 </Typography>
+
                 <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
                     {accesorioData.slice(0, visibleCards).map((accesorio) => (
                         <Card key={accesorio.id} sx={{ maxWidth: 300, width: '100%', margin: 2 }}>
