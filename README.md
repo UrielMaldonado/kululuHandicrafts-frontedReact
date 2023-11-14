@@ -38,8 +38,8 @@ npm install @mui/lab
 ```
 ## Iniciar la Aplicación
 ```bash
-npm start
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+npm run dev
+Open [http://localhost:5173/](http://localhost:5173/) to view it in the browser.
 ```
 ## Construir y Desplegar (Opcional)
 ```bash
@@ -80,7 +80,7 @@ npm install
 ### Esto instalará todas las dependencias del proyecto que están definidas en el archivo package.json. Después de eso, puedes ejecutar el comando npm start para iniciar la aplicación.
 
 ```bash
-npm start
+npm run dev
 ```
 
 
